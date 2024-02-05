@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,400;0,700;1,300&family=Source+Code+Pro:wght@300;400;700&display=swap');
+
+:root {
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: #667eea;
+    --color-secondary: #764ba2;
+    --color-3: white;
+    --color-4: black;
+    --boton-padding: 20px 40px;
+}
+
+
+body {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+/* * {
+    border: 1px solid black;
+} */
+
+/* .subtitle{
+    color: var(--color-primary);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+} */
+
+/* .nav--footer{
+    font-weight: 300;
+    justify-content: flex-start;
+} */
+
+/* container para cada seccion */
+/* cambiar el max width  */
+.container {
+
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+    max-width: 1536px;
+    overflow: hidden;
+}
+
+/* header begin */
+
+/* para quitarle el padding de la clase container y se sobreescriba por este */
+.hero .container {
+    padding: 0;
+}
+
+.hero {
+    background-image: var(--background), url('../assets/hero.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    font-weight: 700;
+
+}
+
+.nav__items {
+    color: var(--color-3);
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 0 15px;
+}
+
+
+.hero__container {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 150px);
+    align-items: end;
+    color: var(--color-3);
+    text-align: center;
+}
+
+
+.hero__texts {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+
+.hero__title {
+    font-size: 2.2rem;
+}
+
+.hero__subtitle {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+/* header end */
+
+/* about begin */
+.about {
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: [col-start] 1fr [mid-start] 1fr [mid-end] 1fr [col-end] 1fr;
+    grid-template-rows: [row-start] 1fr [mid-row] 1fr [row-end]; */
+    /* grid-template-areas:
+    "subtitle subtitle subtitle photo"
+    "left-paragraph left-paragraph right-paragraph right-paragraph"; */
+    gap: 1em;
+    
+}
+
+
+
+.about__photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+/* grid */
+
+.about__subtitle {
+    color: var(--color-4);
+    font-size: 3rem;
+}
+
+.about__picture {
+    /* grid-area: photo; */
+    /* grid-column:  col-end/ col-end;
+    grid-row: row-start/ mid-row; */
+    align-self: center;
+}
+
+.paragraph {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
+/* about end */
+
+/* experience begin */
+.experience {
+    text-align: center;
+}
+
+.experience__subtitle {
+    color: var(--color-4);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+}
+
+.experience__paragraph {
+    font-size: 1.5em;
+}
+
+.experience_title{
+
+}
+.experience__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+
+@media screen and (max-width:769px) {
+    .hero__container {
+        align-items: center;
+    }
+}
