@@ -34,7 +34,6 @@ body {
 /* container para cada seccion */
 /* cambiar el max width  */
 .container {
-
     width: 90%;
     margin: 0 auto;
     padding: 80px 0;
@@ -115,10 +114,8 @@ body {
     "subtitle subtitle subtitle photo"
     "left-paragraph left-paragraph right-paragraph right-paragraph"; */
     gap: 1em;
-    
+
 }
-
-
 
 .about__photo {
     width: 200px;
@@ -155,8 +152,18 @@ body {
 /* about end */
 
 /* experience begin */
+
 .experience {
+    display: grid;
+    grid-template-areas: "header header"
+        "tech companies";
+    gap: 3rem 15rem;
+
+}
+
+.experience__texts {
     text-align: center;
+    grid-area: header;
 }
 
 .experience__subtitle {
@@ -169,13 +176,182 @@ body {
     font-size: 1.5em;
 }
 
-.experience_title{
+
+
+.experience__icons {
+    grid-area: tech;
 
 }
+
 .experience__grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(50px, 1fr));
+    gap: 1em;
+    justify-content: center;
+    align-content: center;
+
 }
+
+
+.experience__items {
+    justify-self: center;
+    align-self: center;
+}
+
+.experience__img {
+
+    height: 40px;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.experience__title {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 40px 0;
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.experience__companies {
+    grid-area: companies;
+
+}
+
+/* experience end */
+
+/* projects begin */
+/* la clase container no esta al principio de esta sccion ya que 
+el background se pondria en el contenedor y queremos que se vea en todo el ancho */
+.projects{
+    background: #f2f2f2;
+}
+
+
+.projects__head{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap:3em
+}
+
+ .projects__subtitle{
+    color: var(--color-4);
+    font-size: 2.5rem;
+   
+} 
+
+.projects__paragraph{
+    font-size: 1.5em;
+} 
+
+.projects__grid{
+    display:grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, minmax(250px, 2fr));
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.projects__item{
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.projects__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: filter 1s;
+}
+
+.projects__img:hover{
+    filter: grayscale(0%);
+}
+
+/* no se uso */
+/* .projects__hover{
+
+} */
+
+
+
+.projects__text{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
+
+.projects__title{
+    font-size:1.25rem;
+    line-height: 1.75rem;
+}
+
+.projects__description{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.projects__link{
+    text-decoration: none;
+    color: var(--color-4)
+}
+
+.projects__link:hover{
+    text-decoration: underline;
+}
+
+/* project end */
+
+/* footer begin */
+.footer{
+    background: var(--color-primary);
+}
+.footer .container {
+    padding: 0;
+}
+
+.footer__contact{
+    display: grid;
+    grid-template-columns: minmax(100px, 0.5fr);
+    
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.footer__icons{
+    justify-self: center;
+}
+
+.footer__scroll{
+    width: 100%;
+    justify-self: center;
+    max-width: 100px;
+}
+
+.footer__link{
+  
+   
+}
+
+.footer__img{
+    width: 100%;
+}
+
+.footer__copyright{
+    justify-self: center;
+
+}
+
 
 
 @media screen and (max-width:769px) {
