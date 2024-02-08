@@ -13,15 +13,15 @@
     <header class="hero">
         <div class="container">
             <nav class="nav">
-                <div class="nav__logo">
-                    <img src="" alt="logo" class="nav__picture">
-                </div>
+                <p class="nav__logo">
+                    <a href="/">Johan A. Marin</a>
+                </p>
 
                 <div class="nav__list">
-                    <a class="nav__items" href="">ABOUT</a>
-                    <a class="nav__items" href="">EXPERIENCE</a>
-                    <a class="nav__items" href="">WORK</a>
-                    <a class="nav__items" href="">CONTACT</a>
+                    <a class="nav__items" href="#about">ABOUT</a>
+                    <a class="nav__items" href="#experience">EXPERIENCE</a>
+                    <a class="nav__items" href="#work">WORK</a>
+                    <a class="nav__items" href="#contact">CONTACT</a>
                     <a class="nav__items" href="">DARK-MODE</a>
                 </div>
 
@@ -29,14 +29,14 @@
             <section class="hero__container">
                 <div class="hero__texts">
                     <h1 class="hero__title">HI, I'M JOHAN</h1>
-                    <h2 class="hero__subtitle">Full stack developer</h2>
+                    <p class="hero__subtitle">Full stack developer</p>
                 </div>
             </section>
         </div>
 
     </header>
     <main>
-        <section class="about container">
+        <section id="about" class="about container">
             <h2 class="about__subtitle">The one-man tech team ready to bring your next big idea to life.</h2>
             <div class="about__picture">
                 <img class="about__photo" src="assets/johan.jpg" alt="imagen personal">
@@ -59,16 +59,16 @@
 
 
 
-        <section class="experience container">
+        <section id="experience" class="experience container">
             <div class="experience__texts">
-                <h2 class="experience__subtitle">Experience</h2>
+                <h2 class="experience__title">Experience</h2>
                 <p class="experience__paragraph">I've been doing web development for about 3 years now, and I'm always
                     eager to learn more in this fast paced industry.</p>
             </div>
 
 
             <div class="experience__icons">
-                <h2 class="experience__title">Tech stack</h2>
+                <h3 class="experience__subtitle">Tech stack</h3>
                 <div class="experience__grid">
                     <div class="experience__items"><img src="assets/html-5.svg" alt="" class="experience__img"></div>
                     <div class="experience__items"><img src="assets/css-3.svg" alt="" class="experience__img"></div>
@@ -106,15 +106,15 @@
             </div>
 
             <div class="experience__companies">
-                <h2 class="experience__title">Where i've worked</h2>
-                <img src="" alt="Quod tecnologies" class="experience__img">
-                <img src="" alt="Flexxiz" class="experience__img">
+                <h3 class="experience__subtitle">Where i've worked</h3>
+                <img src="assets/logoquod.png" alt="Quod tecnologies" class="experience__img-companies">
+                <img src="assets/TRANSPARENTE.png" alt="Flexxiz" class="experience__img-companies">
             </div>
 
         </section>
 
 
-        <section class="projects">
+        <section id="work" class="projects">
             <div class="container">
 
                 <div class="projects__head">
@@ -221,7 +221,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <div class="container">
             <section class="footer__contact">
                 <div class="footer__icons">
@@ -248,8 +248,7 @@
                     <a id="to-top" class="footer__link" href="#page-top">
                         <img class="footer__img" id="rocket" src="assets/rocket-svgrepo-com.svg">
                     </a>
-                    <p class="footer__paragraph" >Don't touch me, i'll do something!
-                    </p>
+                    <p class="footer__paragraph" >Don't touch me!</p>
                 </div>
                 <div class="footer__copyright">
                     <p class="footer__paragraph"> all alright reserved <i class="fa fa-copyright"></i> Johan A. Marin
