@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="hero">
+    <header id="hero" class="navigation">
         <div class="container">
             <nav class="nav">
                 <p class="nav__logo">
@@ -26,36 +26,45 @@
                 </div>
 
             </nav>
-            <section class="hero__container">
+            <!-- <section class="hero__container">
+                <div class="hero__texts">
+                    <h1 class="hero__title">HI, I'M JOHAN</h1>
+                    <p class="hero__subtitle">Full stack developer</p>
+                </div>
+            </section> -->
+        </div>
+
+    </header>
+    <main>
+
+                <section class="hero__container">
                 <div class="hero__texts">
                     <h1 class="hero__title">HI, I'M JOHAN</h1>
                     <p class="hero__subtitle">Full stack developer</p>
                 </div>
             </section>
-        </div>
 
-    </header>
-    <main>
         <section id="about" class="about container">
             <h2 class="about__subtitle">The one-man tech team ready to bring your next big idea to life.</h2>
             <div class="about__picture">
                 <img class="about__photo" src="assets/johan.jpg" alt="imagen personal">
             </div>
+            <div class="about__texts">
+                <p class="about__text about__text--left">For over 10 years I've been helping founders & business
+                    owners build the technology powering their organisations. I've developed everything from simple
+                    marketing websites to entire SAAS platforms and everything in between.</p>
+                <p class="about__text about__text--right">As a full-stack developer, I'm a one-stop-shop, able to
+                    take ideas from conception to completion, handling the entire process from start to finish.</p>
+                <p class="about__text about__text--left">With a background in computer science, I'm a problem solver
+                    at heart and love taking on complex and challenging projects. I'm great at quickly getting up to speed
+                    and breaking down tricky business requirements for industry-specific systems.</p>
+                <p class="about__text about__text--right">So whether you're a non-technical founder building your
+                    first app or an established enterprise with an existing tech team, I'm ready to jump in and help you get
+                    your next big idea off the ground.</p>
+    
+            </div>
         </section>
-        <section class="paragraph container">
-            <p class="paragraph__text paragraph__text--left">For over 10 years I've been helping founders & business
-                owners build the technology powering their organisations. I've developed everything from simple
-                marketing websites to entire SAAS platforms and everything in between.</p>
-            <p class="paragraph__text paragraph__text--right">As a full-stack developer, I'm a one-stop-shop, able to
-                take ideas from conception to completion, handling the entire process from start to finish.</p>
-            <p class="paragraph__text paragraph__text--left">With a background in computer science, I'm a problem solver
-                at heart and love taking on complex and challenging projects. I'm great at quickly getting up to speed
-                and breaking down tricky business requirements for industry-specific systems.</p>
-            <p class="paragraph__text paragraph__text--right">So whether you're a non-technical founder building your
-                first app or an established enterprise with an existing tech team, I'm ready to jump in and help you get
-                your next big idea off the ground.</p>
-
-        </section>
+ 
 
 
 
@@ -245,7 +254,7 @@
                 </div>
 
                 <div class="footer__scroll">
-                    <a id="to-top" class="footer__link" href="#page-top">
+                    <a id="to-top" class="footer__link" href="#hero">
                         <img class="footer__img" id="rocket" src="assets/rocket-svgrepo-com.svg">
                     </a>
                     <p class="footer__paragraph" >Don't touch me!</p>
@@ -264,7 +273,23 @@
 
 
     <script src="https://kit.fontawesome.com/4e542a93e8.js" crossorigin="anonymous"></script>
+<script type="text/javascript">
 
+    window.addEventListener("scroll", scrollMoving)
+    function scrollMoving (){
+        let header = document.querySelector("header");
+        header.classList.toggle("navigation__moving", window.scrollY>0)
+    }
+
+// const navigation = document.querySelector(".primary-navigation");
+
+// const navigationHeight = navigation.offsetHeight;
+
+// document.documentElement.style.setProperty(
+//   "--scroll-padding",
+//   navigationHeight + "px"
+// );
+</script>
 
 </body>
 
