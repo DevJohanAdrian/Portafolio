@@ -20,7 +20,8 @@
 
 html {
     scroll-behavior: smooth;
-    /* scroll-padding: 10rem; */
+    scrollbar-color: gray #f2f2f2;
+    scrollbar-width: thin;
 }
 
 /* valor preteminado de 16px, 100% sigue siendo 16px, para utilizar con em */
@@ -37,7 +38,6 @@ h4,
 h5,
 h6 {
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 400;
 }
 
 p {
@@ -46,6 +46,10 @@ p {
     font-weight: 400;
 }
 
+/* p::selection {
+    background: black;
+    color: white;
+} */
 
 /* section {
     border: 1px solid black;
@@ -95,7 +99,7 @@ p {
     left: 0;
     width: 100%;
     z-index: 10;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 /* clase que sera agregada con el movimiento del scroll */
@@ -124,6 +128,7 @@ p {
     padding: 0.9375rem 0;
     text-transform: uppercase;
     font-weight: 700;
+    transition: 1.5s;
 
 
 }
@@ -231,11 +236,11 @@ p {
     justify-content: space-between; */
     display: grid;
     grid-template-columns: [one] 1fr [two] 1fr [three] 1fr [four] 1fr [five];
-    grid-template-rows: [row-start] 1fr [mid-row] 1fr [row-end];
+    grid-template-rows: [row-start]  0.5fr [mid-row] 1fr  [mid-end] 0.5fr  [row-end] ;
     /* grid-template-areas:
     "subtitle subtitle subtitle photo"
     "left-paragraph left-paragraph right-paragraph right-paragraph"; */
-    gap: 3rem 5rem;
+    gap: 1rem 5rem;
     justify-content: center;
     align-items: center;
 
@@ -257,7 +262,7 @@ p {
     /* grid-area: photo; */
     /* grid-column:  col-end/ col-end;
     grid-row: row-start/ mid-row; */
-    align-self: center;
+    /* align-self: center; */
     grid-column: four / five;
     grid-row: row-start / mid-row;
 
@@ -276,23 +281,36 @@ p {
 
 .about__texts {
     grid-column: one / five;
-    grid-row: mid-row / row-end;
+    grid-row: mid-row / mid-end;
     display: grid;
     grid-template-columns: [subOne] 1fr [subTwo] 1fr [subThree];
     gap: 1.5rem;
     justify-content: center;
-
-
-
+    align-content: center;
 }
 
 .about__text {
     /* font-size: 19px; */
     font-size: 1.2em;
-
-
     /* font-family: 'Source Sans 3', sans-serif; */
 }
+
+
+.about__resume{
+    font-family: 'Source Sans 3', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    background-color: black;
+    border-radius: 2.5rem;
+    padding: 1.25rem 2.5rem;
+    margin: 0 auto;
+    text-align: center;
+    grid-row: mid-end / row-end;
+    grid-column: one / five;
+    display: inline-block;
+}
+
 
 /* about end */
 
@@ -300,8 +318,9 @@ p {
 
 .experience {
     display: grid;
-    grid-template-areas: "header header"
-        "tech companies";
+    grid-template-areas: 
+    "header header"
+    "tech companies";
     gap: 3rem 10rem;
     justify-content: space-around;
 
@@ -398,7 +417,7 @@ el background se pondria en el contenedor y queremos que se vea en todo el ancho
     display: flex;
     position: relative;
     flex-direction: column;
-    gap: 3rem
+    gap: 2.5rem
 }
 
 .projects__subtitle {
@@ -416,10 +435,11 @@ el background se pondria en el contenedor y queremos que se vea en todo el ancho
 }
 
 .projects__grid {
+    padding-top:1.25rem;
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
     grid-template-rows: repeat(2, minmax(250px, 2fr));
-    gap: 2.5rem;
+    gap: 3rem;
     justify-content: center;
     align-items: center;
 
@@ -543,9 +563,13 @@ el background se pondria en el contenedor y queremos que se vea en todo el ancho
 }
 
 
-
-@media screen and (max-width:769px) {
+/* se ejecuta si es igual o mayor a 768 */
+@media screen and (max-width:768px) {
     .hero__container {
         align-items: center;
     }
+}
+
+@media screen and (min-width:1280){
+
 }
