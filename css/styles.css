@@ -108,9 +108,7 @@ p {
 }
 
 .nav {
-
     /* background: green; */
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -128,9 +126,6 @@ p {
     padding: 0.9375rem 0;
     text-transform: uppercase;
     font-weight: 700;
-    transition: 1.5s;
-
-
 }
 
 
