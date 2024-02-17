@@ -5,6 +5,28 @@
     --color-3: white;
     --color-4: black;
     --boton-padding: 20px 40px;
+
+    --font-zise-heading-1:
+    --font-zise-heading-2:
+    --font-zise-heading-3:
+    --font-size-text-1:
+    --font-size-text-2:
+
+    --font-weight-heading-1: 300;
+    --font-weight-heading-2: 400;
+    --font-weight-heading-3: 400;
+    --font-weight-texts:400;
+    --font-weight-button:500;
+
+    --letter-spacing-heading-1:-0.5px;
+    --letter-spacing-heading-2:0px;
+    --letter-spacing-heading-2:0px;
+    --letter-spacing-texts:0.5px;
+    --letter-spacing-button:1.25px;
+
+    --line-height-texts:1.5;
+    --line-height-headings:1.375
+
 }
 
 @font-face {
@@ -44,6 +66,7 @@ p {
     font-family: 'Source Sans 3', sans-serif;
     line-height: 1.425em;
     font-weight: 400;
+
 }
 
 /* p::selection {
@@ -103,7 +126,7 @@ p {
 }
 
 /* clase que sera agregada con el movimiento del scroll */
-.navigation__moving{
+.navigation__moving {
     background-color: black;
 }
 
@@ -134,11 +157,12 @@ p {
 
 .nav__items {
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 1em;
+    font-size: clamp(1rem, 0.934rem + 0.277vw, 1.2rem);
+    /* font-size: 1em;  */
     font-weight: 300;
     color: var(--color-3);
     text-decoration: none;
- 
+
     /* margin-right: 1.25rem; */
     /* padding: 0 0.9375rem; */
 
@@ -184,7 +208,7 @@ p {
 
 
 .hero__container {
-    height:100vh;
+    height: 100vh;
     background-image: var(--background), url('../assets/hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -209,13 +233,15 @@ p {
 
 .hero__title {
     /* font-family: 'Alegreya Sans SC', sans-serif; */
-    font-size: 4.25em;
+    font-size: clamp(2.125rem, 1.426rem + 2.941vw, 4.25rem);
+    /* font-size: 4.25em; */
     font-weight: 300;
     line-height: 5.125rem;
 }
 
 .hero__subtitle {
     /* font-family: 'Source Sans 3', sans-serif; */
+    font-size: clamp(1rem, 0.934rem + 0.277vw, 1.2rem);
     font-size: 1.2em;
     font-weight: 300;
     margin: 0.9375rem 0;
@@ -231,7 +257,7 @@ p {
     justify-content: space-between; */
     display: grid;
     grid-template-columns: [one] 1fr [two] 1fr [three] 1fr [four] 1fr [five];
-    grid-template-rows: [row-start]  0.5fr [mid-row] 1fr  [mid-end] 0.5fr  [row-end] ;
+    grid-template-rows: [row-start] 0.5fr [mid-row] 1fr [mid-end] 0.5fr [row-end];
     /* grid-template-areas:
     "subtitle subtitle subtitle photo"
     "left-paragraph left-paragraph right-paragraph right-paragraph"; */
@@ -239,13 +265,16 @@ p {
     justify-content: center;
     align-items: center;
 
+
+
 }
 
 
 .about__subtitle {
     color: var(--color-4);
     /* font-family: 'Alegreya Sans SC', sans-serif; */
-    font-size: 2.6em;
+    font-size: clamp(1.313rem, 0.881rem + 1.817vw, 2.625rem);
+    /* font-size: 2.6em; */
     line-height: 3.125rem;
     grid-column: one / four;
     grid-row: row-start / mid-row;
@@ -279,33 +308,42 @@ p {
     grid-row: mid-row / mid-end;
     display: grid;
     grid-template-columns: [subOne] 1fr [subTwo] 1fr [subThree];
-    gap: 1.5rem;
-    justify-content: center;
+    /* grid-template-columns: repeat(2, minmax(66ch, 75ch)); */
+    gap:2rem 1rem ;
+    justify-content: space-between;
     align-content: center;
+  
 }
 
 .about__text {
     /* font-size: 19px; */
-    font-size: 1.2em;
+    font-size: clamp(1rem, 0.934rem + 0.277vw, 1.2rem);
+    /* font-size: 1.2em; */
     /* font-family: 'Source Sans 3', sans-serif; */
 }
 
 
-.about__resume{
+.about__resume {
     font-family: 'Source Sans 3', sans-serif;
     text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    background-color: black;
-    border-radius: 2.5rem;
+    color: black;
+    font-size: clamp(1rem, 0.934rem + 0.277vw, 1.2rem);
+    /* font-size: 1.2em; */
+    border-radius: 0.3125rem;
+    border: 1px solid black;
     padding: 1.25rem 2.5rem;
     margin: 0 auto;
     text-align: center;
     grid-row: mid-end / row-end;
     grid-column: one / five;
     display: inline-block;
+    transition: all 0.5s ease-in-out 0.2s;
 }
 
+.about__resume:hover {
+    background-color: black;
+    color: white;
+}
 
 /* about end */
 
@@ -313,9 +351,9 @@ p {
 
 .experience {
     display: grid;
-    grid-template-areas: 
-    "header header"
-    "tech companies";
+    grid-template-areas:
+        "header header"
+        "tech companies";
     gap: 3rem 10rem;
     justify-content: space-around;
 
@@ -328,7 +366,8 @@ p {
 
 .experience__paragraph {
     /* font-family: 'Source Sans 3', sans-serif; */
-    font-size: 1.2em;
+    font-size: clamp(1rem, 0.934rem + 0.277vw, 1.2rem);
+    /* font-size: 1.2em; */
 }
 
 .experience__subtitle {
@@ -336,7 +375,8 @@ p {
     text-transform: uppercase;
     text-align: left;
     /* font-family: 'Alegreya Sans SC', sans-serif; */
-    font-size: 1.6em;
+    font-size: clamp(0.813rem, 0.545rem + 1.125vw, 1.625rem);
+    /* font-size: 1.6em; */
     line-height: 1.9375rem;
     font-weight: 300;
 }
@@ -380,7 +420,8 @@ p {
 .experience__title {
     color: var(--color-4);
     /* font-family: 'Alegreya Sans SC', sans-serif; */
-    font-size: 2.6em;
+    font-size: clamp(1.313rem, 0.881rem + 1.817vw, 2.625rem);
+    /* font-size: 2.6em; */
     margin-bottom: 2.1875rem;
 }
 
@@ -418,7 +459,8 @@ el background se pondria en el contenedor y queremos que se vea en todo el ancho
 .projects__subtitle {
     color: var(--color-4);
     /* font-family: 'Alegreya Sans SC', sans-serif; */
-    font-size: 2.6em;
+    font-size: clamp(1.313rem, 0.881rem + 1.817vw, 2.625rem);
+    /* font-size: 2.6em; */
     line-height: 3.125rem;
 
 
@@ -426,11 +468,12 @@ el background se pondria en el contenedor y queremos que se vea en todo el ancho
 
 .projects__paragraph {
     /* font-family: 'Source Sans 3', sans-serif; */
-    font-size: 1.2em;
+    font-size: clamp(1rem, 0.934rem + 0.277vw, 1.2rem);
+    /* font-size: 1.2em; */
 }
 
 .projects__grid {
-    padding-top:1.25rem;
+    padding-top: 1.25rem;
     display: grid;
     grid-template-columns: repeat(3, minmax(250px, 1fr));
     grid-template-rows: repeat(2, minmax(250px, 2fr));
@@ -476,13 +519,15 @@ el background se pondria en el contenedor y queremos que se vea en todo el ancho
 
 .projects__title {
     /* font-family: 'Alegreya Sans SC', sans-serif; */
-    font-size: 1.6em;
+    font-size: clamp(0.813rem, 0.545rem + 1.125vw, 1.625rem);
+    /* font-size: 1.6em; */
     line-height: 1.9375rem;
 }
 
 .projects__description {
     /* font-family: 'Source Sans 3', sans-serif; */
-    font-size: 1.2em;
+    font-size: clamp(1rem, 0.934rem + 0.277vw, 1.2rem);
+    /* font-size: 1.2em; */
     line-height: inherit;
 }
 
@@ -523,12 +568,18 @@ el background se pondria en el contenedor y queremos que se vea en todo el ancho
 
 }
 
-.footer__icons a {
+.footer__icon {
     text-decoration: none;
     color: var(--color-3);
-    font-size: 2.1875rem;
+    font-size: 2.1875em;
+    transition: font-size 0.2s ease-in-out 0.3s;
 
 }
+
+.footer__icon:hover {
+    font-size: 3.1875em;
+}
+
 
 .footer__scroll {
     width: 100%;
@@ -545,9 +596,12 @@ el background se pondria en el contenedor y queremos que se vea en todo el ancho
 }
 
 
+
+
 .footer__paragraph {
     /* font-family: 'Source Sans 3', sans-serif; */
-    font-size: 1em;
+    font-size: clamp(1rem, 1rem + 0vw, 1rem);
+    /* font-size: 1em; */
     margin: 0 auto;
 }
 
@@ -558,13 +612,82 @@ el background se pondria en el contenedor y queremos que se vea en todo el ancho
 }
 
 
-/* se ejecuta si es igual o mayor a 768 */
-@media screen and (max-width:768px) {
-    .hero__container {
-        align-items: center;
+/* se ejecuta si es igual o menor a 1267px */
+@media only screen and (max-width:1267px) {
+
+    .hero__container{
+        align-items: center ;
     }
+
+    .about {
+        grid-template-columns: [one] 1fr [two];
+        grid-template-rows: [row-one] 0.5fr [row-two] 0.5fr [row-three] 0.5fr [row-four] 0.5fr [row-five];
+    }
+
+
+    .about__subtitle {
+        text-align: center;
+        grid-column: one / two;
+        grid-row: row-one / row-two;
+    }
+
+
+    .about__picture {
+        grid-column: one / two;
+        grid-row: row-two / row-three;
+        justify-self: center;
+    }
+
+
+    .about__texts {
+        grid-column: one / two;
+        grid-row: row-three / row-four;
+        grid-template-columns: [subOne] 1fr [subTwo];
+       
+    }
+
+
+
+    .about__resume {
+        align-self: self-start;
+        grid-column: one / two;
+        grid-row: row-four / row-five;
+    }
+
+
+
+    .experience {
+        grid-template-areas:
+            "header"
+            "tech"
+            "companies";
+        gap: 1rem;
+    }
+
+    .experience__subtitle {
+        text-align: center;
+    }
+
+    .experience__img-companies {
+        margin: 0 auto;
+        max-width: 250px;
+     
+    }
+
+
+    .projects__grid {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-template-rows: repeat(3, minmax(250px, 2fr));
+    }
+    
 }
 
-@media screen and (min-width:1280){
+
+
+/* se ejecuta si es igual o menor a 768 */
+@media only screen and (max-width:768px) {
 
 }
+
+
+
