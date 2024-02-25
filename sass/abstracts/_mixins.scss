@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+
+
+// @mixin linear-gradient($direction, $list) {
+//     background: -webkit-linear-gradient($direction, $list);
+//     background: -moz-linear-gradient($direction, $list);
+//     background: -o-linear-gradient($direction, $list);
+//     background: linear-gradient($direction, $list);
+// }
+
+@mixin linear-gradient-image($direction, $list) {
+    background-image: linear-gradient($direction, $list), url('../assets/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}

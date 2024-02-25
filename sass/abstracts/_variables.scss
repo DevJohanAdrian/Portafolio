@@ -1,0 +1,52 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+// colors and backgrounds
+$background-footer: #7189ff;
+$background-navbar: rgba(12, 9, 16, 0.9);
+$nav-active:  #7189ff;
+$color-gray: #f2f2f2;
+$color-black: #0c0910;
+$color-white: #FFFAFA;
+$boton-padding: 20px 40px;
+
+
+// colors gradients
+$from-gradient-hero: hsla(229, 76%, 66%, 0.494);
+$to-gradient-hero: hsla(270, 37%, 46%, 0.596);
+$from-gradient-nav: #f69ec4;
+$to-gradient-nav: #f9dd94;
+
+// gradients list
+$list-hero: $from-gradient-hero 0%, $to-gradient-hero 100%;
+$list-underline-nav: $from-gradient-nav, $to-gradient-nav 100%;
+
+// fonts, weight, spacing, line height
+$font-size-heading-1: calc(clamp(2.125rem, 1.426rem + 2.941vw, 4.25rem));
+$font-size-heading-2: calc(clamp(1.313rem, 0.881rem + 1.817vw, 2.625rem));
+$font-size-heading-3: calc(clamp(0.813rem, 0.545rem + 1.125vw, 1.625rem));
+$font-size-text-1: calc(clamp(0.5rem, 0.934rem + 0.277vw, 1.2rem));
+$font-size-text-2: calc(clamp(0.7rem, 1rem + 0vw, 0.7rem));
+$font-size-navbar-icons: 1.625rem;
+
+$font-weight-heading-1: 300;
+$font-weight-heading-2: 400;
+$font-weight-heading-3: 400;
+$font-weight-texts: 400;
+$font-weight-button: 500;
+$font-weight-logo: 700;
+
+$letter-spacing-heading-1: -0.5px;
+$letter-spacing-heading-2: 0px;
+$letter-spacing-heading-3: 0px;
+$letter-spacing-texts: 0.5px;
+$letter-spacing-button: 1.25px;
+
+$line-height-texts: 1.5;
+$line-height-headings: 1.375;
+
+
+
+

@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+
+@font-face {
+    font-family: 'Alegreya Sans SC';
+    src: url(/assets/fonts/AlegreyaSansSC-Regular.woff2) format(woff2),
+        url(/assets/fonts/AlegreyaSansSC-Regular.woff) format(woff),
+        url(/assets/fonts/AlegreyaSansSC-Regular.ttf) format(trutype);
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans 3';
+    src: url(/assets/fonts/SourceSans3-Regular.woff2) format(woff2),
+        url(/assets/fonts/SourceSans3-Regular.woff) format(woff),
+        url(/assets/fonts/SourceSans3-Regular.ttf) format(trutype);
+    font-display: swap;
+
+}

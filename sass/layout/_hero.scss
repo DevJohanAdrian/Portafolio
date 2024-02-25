@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the hero of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.hero {
+    height: 100vh;
+    @include linear-gradient-image(135deg, $list-hero);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: $color-white;
+    text-align: center;
+
+
+    &__texts {
+        width: 100%;
+        margin-bottom: 1.25rem;
+    }
+
+    &__title {
+        font-size: $font-size-heading-1;
+        font-weight: $font-weight-heading-1;
+        line-height: $line-height-headings;
+        letter-spacing: $letter-spacing-heading-1;
+    }
+
+    &__subtitle {
+        margin: 0.9375rem 0;
+        color: $color-white;
+    }
+}

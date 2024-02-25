@@ -1,0 +1,67 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+
+
+.footer {
+    background-color: $background-footer;
+
+    & .container {
+        padding: 3.125rem 0 1.5625rem 0;
+    }
+
+    &__contact {
+        display: grid;
+        grid-template-columns: minmax(100px, 0.5fr);
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__icons {
+        justify-self: center;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    &__icon {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 2.1875em;
+        transition: font-size 0.2s ease-in-out 0.3s;
+
+        &:hover {
+            font-size: 3.1875em;
+        }
+    }
+
+    &__scroll {
+        width: 100%;
+        justify-self: center;
+        max-width: 100px;
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__warning {
+        font-size: $font-size-text-2;
+        margin: 0 auto;
+    }
+
+    &__paragraph {
+        margin: 0 auto;
+    }
+
+    &__copyright {
+        justify-self: center;
+        align-self: flex-start;
+    }
+}

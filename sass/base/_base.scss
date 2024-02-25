@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+
+
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: gray $color-gray;
+    scrollbar-width: thin;
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: $font-size-text-1;
+    font-weight: $font-weight-texts;
+    line-height: $line-height-texts;
+    letter-spacing: $letter-spacing-texts;
+}
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+
+@media only screen and (max-width: 1267px) {
+    .hero {
+        align-items: center;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 0.5fr);
+        grid-template-areas: "subtitle-about" "picture-about" "text-about" "resume";
+
+    }
+
+    .about__subtitle {
+        text-align: center;
+        grid-area: subtitle-about;
+
+    }
+
+    .about__picture {
+        grid-area: picture-about;
+        justify-self: center;
+    }
+
+    .about__texts {
+        grid-area: text-about;
+        grid-template-columns: 1fr;
+    }
+
+    .about__resume {
+        grid-area: resume;
+        align-self: self-start;
+    }
+
+    .experience {
+        grid-template-areas: "head" "tech" "companies";
+        grid-template-rows: 0.5fr repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .experience__subtitle {
+        text-align: center;
+    }
+
+    .experience__img-companies {
+        margin: 0 auto;
+        max-width: 250px;
+    }
+
+    .projects__grid {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+        grid-template-rows: repeat(3, minmax(250px, 2fr));
+    }
+}
+
+
+/* se ejecuta si es igual o menor a 768 */
+@media only screen and (max-width:768px) {
+
+
+    .navbar__links {
+        flex-direction: column;
+    }
+
+    .navbar__btn {
+        display: block;
+
+    }
+
+    .navbar__menu {
+        position: fixed;
+        background-color: $background-navbar;
+        min-width: 200px;
+        height: 100vh;
+        top: 0;
+        right: -400%;
+        padding: 5rem 3.125rem;
+        transition: 0.5s;
+        transition-property: right;
+        backdrop-filter: blur(15px);
+    }
+
+    .navbar__btn-active {
+        right: 0;
+    }
+
+    .navbar__close-btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 1.5625rem;
+
+    }
+
+    .navbar__item {
+        display: block;
+        margin: 1.25rem;
+        padding: 0 0.9375rem;
+    }
+
+    .experience__grid {
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+    }
+
+    .projects__grid {
+        grid-template-columns: minmax(250px, 1fr);
+    }
+}
+
+
+@media only screen and(max-width:500px) {
+    .experience__grid {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+    }
+
+}
+
+@media only screen and(max-width:360px) {
+    .experience__grid {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+
+}

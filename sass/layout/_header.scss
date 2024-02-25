@@ -1,0 +1,90 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.header .container {
+    padding: 0;
+}
+
+
+.header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.6s;
+}
+
+.navigation__moving {
+    background-color: $color-black;
+    padding: 0.625rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 0;
+
+    &__brand {
+
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: $font-size-text-1;
+        font-weight: $font-weight-logo;
+        line-height: $line-height-texts;
+        letter-spacing: $letter-spacing-texts;
+        color: $color-white;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+
+    }
+
+    &__link {
+        list-style: none;
+    }
+
+    &__item {
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: $font-size-text-1;
+        font-weight: $font-weight-logo;
+        line-height: $line-height-texts;
+        letter-spacing: $letter-spacing-texts;
+        color: $color-white;
+        text-decoration: none;
+        padding: 0.9375rem 0 0.9375rem 3rem;
+        transition: 0.3s;
+     
+
+        &:hover{
+            color: $nav-active;
+        }
+
+    }
+
+    &__item--active{
+        color: $nav-active;
+    }
+
+    &__btn {
+        color: $color-white;
+        font-size: $font-size-navbar-icons;
+        cursor: pointer;
+        display: none;
+    }
+
+}

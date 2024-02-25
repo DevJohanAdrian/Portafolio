@@ -5,43 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full-stack web & software developer from Medellin, Colombia | Johan A. Marin</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description"
+        content="Johan Marin is a software developer who creates web-based products and solutions.">
+    <meta name="image" content="https://johanmarin.com/og.png">
+    <meta name="author" content="Johan Marin">
+
+    <meta property="og:title" content="Johan Marin">
+    <meta property="og:description"
+        content="Johan Marin is a software developer who creates web-based products and solutions.">
+    <meta property="og:url" content="https://johanmarin.com/">
+    <meta property="og:site_name" content="Johan Marin">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:image" content="https://johanmarin.com/og.png">
+    <meta property="og:type" content="website">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Johan Marin">
+    <meta property="twitter:description"
+        content="Johan Marin is a software developer who creates web-based products and solutions.">
+    <meta property="twitter:url" content="https://johanmarin.com">
+    <meta property="twitter:image" content="https://johanmarin.com/og.png">
+
+    <link rel="author" href="https://johanmarin.com">
+
+    <link rel="icon" type="image/png" sizes="512x192" href="/assets/favicon/android-chrome-512x512.png">
+    <!-- <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-chrome-192x192.png"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+
+
+
     <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/styles.min.css">
 
 
 </head>
 
 <body>
-    <header class="navigation">
+    <header class="header">
         <div class="container">
-            <nav class="nav">
-                <p class="nav__logo">
-                    <a href="/">Johan A. Marin</a>
-                </p>
-
-                <div class="nav__list">
-                    <a class="nav__items" href="#about">About</a>
-                    <a class="nav__items" href="#experience">Experience</a>
-                    <a class="nav__items" href="#work">Work</a>
-                    <a class="nav__items" href="#contact">Contact</a>
-                    <!-- <a class="nav__items" href="">DARK-MODE</a> -->
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <a href="#" class="navbar__brand">Johan A. Marin</a>
                 </div>
+                <div class="navbar__menu">
+                    <div class="navbar__btn">
+                        <i class="fa-solid fa-xmark navbar__close-btn"></i>
+                    </div>
+                    <ul class="navbar__links">
+                        <li class="navbar__link"><a class="navbar__item navbar__item--active" href="#hero">Home</a></li>
+                        <li class="navbar__link"><a class="navbar__item" href="#about">About</a></li>
+                        <li class="navbar__link"><a class="navbar__item" href="#experience">Experience</a></li>
+                        <li class="navbar__link"><a class="navbar__item" href="#work">Work</a></li>
+                        <li class="navbar__link"><a class="navbar__item" href="#contact">Contact</a></li>
+                    </ul>
 
+                </div>
+                <div class="navbar__btn">
+                    <i class="fa-solid fa-bars navbar__menu-btn"></i>
+                </div>
             </nav>
-            <!-- <section class="hero__container">
-                <div class="hero__texts">
-                    <h1 class="hero__title">HI, I'M JOHAN</h1>
-                    <p class="hero__subtitle">Full stack developer</p>
-                </div>
-            </section> -->
-        </div>
 
+        </div>
     </header>
+
     <main>
 
-        <section id="hero" class="hero__container ">
-            <div class="hero__texts ">
+        <section id="hero" class="hero">
+            <div class="hero__texts">
                 <h1 class="hero__title ">HI, I'M JOHAN</h1>
                 <p class="hero__subtitle"><span class="auto-type"></span></p>
             </div>
@@ -49,9 +82,10 @@
 
 
         <section id="about" class="about container">
-            <h2 class="about__subtitle wow animate__animated animate__fadeIn">Discover More About Me: Meet the Mind Behind the Magic.</h2>
+            <h2 class="about__subtitle wow animate__animated animate__fadeIn">Discover more about me: Meet the mind
+                behind the magic.</h2>
             <div class="about__picture  wow animate__animated animate__fadeIn">
-                <img class="about__photo" src="assets/johan.jpg" alt="imagen personal">
+                <img class="about__photo" src="assets/johan.webp" alt="imagen personal">
             </div>
             <div class="about__texts  wow animate__animated  animate__fadeIn">
                 <p class="about__text">For the past five years, my primary objective has been to develop robust and
@@ -86,63 +120,64 @@
             <div class="experience__icons  wow animate__animated animate__fadeInDown">
                 <h3 class="experience__subtitle">Tech stack</h3>
                 <div class="experience__grid">
-                    <div class="experience__items"><img loading="lazy" src="assets/html-5.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/html-5.svg" alt="html-5 icon"
                             class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/css-3.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/css-3.svg" alt="css-3 icon"
                             class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/sass.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/sass.svg" alt="sass icon"
                             class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/bootstrap.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/bootstrap.svg" alt="bootstrap icon"
                             class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/tailwindcss-icon.svg" alt=""
-                            class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/javascript.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/tailwindcss-icon.svg"
+                            alt="tailwindcss icon" class="experience__img"></div>
+                    <div class="experience__items"><img loading="lazy" src="assets/javascript.svg" alt="javascript icon"
                             class="experience__img">
                     </div>
-                    <div class="experience__items"><img loading="lazy" src="assets/typescript-icon.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/typescript-icon.svg"
+                            alt="typescript icon" class="experience__img">
+                    </div>
+                    <div class="experience__items"><img loading="lazy" src="assets/astro-icon.svg" alt="astro-icon"
                             class="experience__img">
                     </div>
-                    <div class="experience__items"><img loading="lazy" src="assets/nodejs-icon.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/nodejs-icon.svg" alt="nodejs icon"
                             class="experience__img">
                     </div>
-                    <div class="experience__items"><img loading="lazy" src="assets/c-sharp-c.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/c-sharp-c.svg" alt="c-sharp-c icon"
                             class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/angular-icon.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/angular-icon.svg" alt="angular icon"
                             class="experience__img">
                     </div>
-                    <div class="experience__items"><img loading="lazy" src="assets/react.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/react.svg" alt="react icon"
                             class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/nextjs-icon.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/nextjs-icon.svg" alt="nextjs icon"
                             class="experience__img">
                     </div>
-                    <div class="experience__items"><img loading="lazy" src="assets/jest.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/jest.svg" alt="jest icon"
                             class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/express-original.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/express-original.svg"
+                            alt="express icon" class="experience__img"></div>
+                    <div class="experience__items"><img loading="lazy" src="assets/nestjs.svg" alt="nestjs icon"
                             class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/nestjs.svg" alt=""
-                            class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/sql-database-generic.svg" alt=""
-                            class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/mongodb-icon.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/sql-database-generic.svg"
+                            alt="sql icon" class="experience__img"></div>
+                    <div class="experience__items"><img loading="lazy" src="assets/mongodb-icon.svg" alt="mongodb icon"
                             class="experience__img">
                     </div>
-                    <div class="experience__items"><img loading="lazy" src="assets/firebase.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/firebase.svg" alt="firebase icon"
                             class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/git-icon.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/git-icon.svg" alt="git icon"
                             class="experience__img"></div>
-                    <div class="experience__items"><img loading="lazy" src="assets/github-icon.svg" alt=""
+                    <div class="experience__items"><img loading="lazy" src="assets/github-icon.svg" alt="github icon"
                             class="experience__img">
                     </div>
-                    <div class="experience__items"><img loading="lazy" src="assets/astro-icon.svg" alt=""
-                            class="experience__img">
-                    </div>
+
                 </div>
             </div>
 
             <div class="experience__companies wow animate__animated animate__fadeInDown">
                 <h3 class="experience__subtitle">Where i've worked</h3>
-                <img loading="lazy" src="assets/logoquod.png" alt="Quod tecnologies" class="experience__img-companies">
-                <img loading="lazy" src="assets/flexxiz.png" alt="Flexxiz" class="experience__img-companies">
+                <img loading="lazy" src="assets/logoquod.webp" alt="Quod tecnologies" class="experience__img-companies">
+                <img loading="lazy" src="assets/flexxiz.webp" alt="Flexxiz" class="experience__img-companies">
             </div>
 
         </section>
@@ -160,7 +195,7 @@
                     <article class="projects__item">
                         <div class="wow animate__animated animate__fadeIn">
                             <a href="">
-                                <img loading="lazy" src="assets/backstage-header.jpg" class="projects__img">
+                                <img loading="lazy" src="assets/project_coming.webp" class="projects__img" alt="project img">
                             </a>
                         </div>
                         <div class="projects__text wow animate__animated animate__fadeIn">
@@ -176,7 +211,7 @@
                     <article class="projects__item">
                         <div class="wow animate__animated animate__fadeIn">
                             <a href="">
-                                <img loading="lazy" src="assets/backstage-header.jpg" class="projects__img">
+                                <img loading="lazy" src="assets/project_coming.webp" class="projects__img" alt="project img">
                             </a>
                         </div>
                         <div class="projects__text wow animate__animated animate__fadeIn">
@@ -192,7 +227,7 @@
                     <article class="projects__item">
                         <div class="wow animate__animated animate__fadeIn">
                             <a href="">
-                                <img loading="lazy" src="assets/backstage-header.jpg" class="projects__img">
+                                <img loading="lazy" src="assets/project_coming.webp" class="projects__img" alt="project img">
                             </a>
                         </div>
                         <div class="projects__text wow animate__animated animate__fadeIn">
@@ -208,7 +243,7 @@
                     <article class="projects__item">
                         <div class="wow animate__animated animate__fadeIn">
                             <a href="">
-                                <img loading="lazy" src="assets/backstage-header.jpg" class="projects__img">
+                                <img loading="lazy" src="assets/project_coming.webp" class="projects__img" alt="project img">
                             </a>
                         </div>
                         <div class="projects__text wow animate__animated animate__fadeIn">
@@ -224,7 +259,7 @@
                     <article class="projects__item">
                         <div class="wow animate__animated animate__fadeIn">
                             <a href="">
-                                <img loading="lazy" src="assets/backstage-header.jpg" class="projects__img">
+                                <img loading="lazy" src="assets/project_coming.webp" class="projects__img" alt="project img">
                             </a>
                         </div>
                         <div class="projects__text wow animate__animated animate__fadeIn">
@@ -240,7 +275,7 @@
                     <article class="projects__item">
                         <div class="wow animate__animated animate__fadeIn">
                             <a href="">
-                                <img loading="lazy" src="assets/backstage-header.jpg" class="projects__img">
+                                <img loading="lazy" src="assets/project_coming.webp" class="projects__img" alt="project img">
                             </a>
                         </div>
                         <div class="projects__text wow animate__animated animate__fadeIn">
@@ -263,25 +298,30 @@
             <section class="footer__contact">
                 <div class="footer__icons">
 
-                    <span class="footer__container-icons">
-                        <a class="fa-brands fa-linkedin footer__icon" href=""></a>
+                    <span class="footer__container-icons" aria-hidden="true">
+                        <a tabindex="-1" class="fa-brands fa-linkedin footer__icon"
+                            href="https://www.linkedin.com/in/johan-marin-7ba535129/" target="_blank"
+                            ></a>
                     </span>
-                    <span class="footer__container-icons">
-                        <a class="fa-brands fa-github footer__icon" href=""></a>
+                    <span class="footer__container-icons" aria-hidden="true">
+                        <a tabindex="-1" class="fa-brands fa-github footer__icon" href="https://github.com/DevJohanAdrian"
+                            target="_blank" ></a>
                     </span>
-                    <span class="footer__container-icons">
-                        <a class="fa-brands fa-codepen footer__icon" href=""></a>
+                    <span class="footer__container-icons" aria-hidden="true">
+                        <a tabindex="-1" class="fa-brands fa-codepen footer__icon" href="https://codepen.io/Johan9412" target="_blank"
+                            ></a>
                     </span>
-                    <span class="footer__container-icons">
-                        <a class="fa-regular fa-envelope footer__icon" href=""></a>
+                    <span class="footer__container-icons" aria-hidden="true">
+                        <a tabindex="-1" class="fa-regular fa-envelope footer__icon" href="mailto:jamaringarciabusiness@gmail.com"
+                            target="_blank" ></a>
                     </span>
-                
+
 
                 </div>
 
                 <div class="footer__scroll wow animate__animated animate__slideInUp">
                     <a id="to-top" class="footer__link" href="#hero">
-                        <img loading="lazy" class="footer__img" id="rocket" src="assets/rocket-svgrepo-com.svg">
+                        <img loading="lazy" class="footer__img" id="rocket" src="assets/rocket-svgrepo-com.webp" alt="rocket">
                     </a>
                     <p class="footer__warning">Don't touch me!</p>
                 </div>
@@ -295,28 +335,10 @@
 
 
 
-    <script src="js/wow.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://kit.fontawesome.com/4e542a93e8.js" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-        new WOW().init();
-        // navigation bar
-        window.addEventListener("scroll", scrollMoving)
-        function scrollMoving() {
-            let header = document.querySelector("header");
-            header.classList.toggle("navigation__moving", window.scrollY > 0)
-        }
-
-        // typewritter
-        var typed = new Typed(".auto-type", {
-            strings: ["Front end developer", "Back end developer", "Full stack developer"],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: true
-
-        })
-    </script>
-
+    <script defer src="js/wow.min.js"></script>
+    <script defer src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script defer src="https://kit.fontawesome.com/4e542a93e8.js" crossorigin="anonymous"></script>
+    <script defer src="js/scripts.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the about of the site/application.
+// -----------------------------------------------------------------------------
+
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "subtitle-about subtitle-about subtitle-about picture-about" "text-about text-about text-about text-about" "resume resume resume resume";
+    gap: 1rem 5rem;
+    justify-content: center;
+    align-items: center;
+
+    &__subtitle {
+        color: $color-black;
+        font-size: $font-size-heading-2;
+        font-weight: $font-weight-heading-2;
+        line-height: $line-height-headings;
+        letter-spacing: $letter-spacing-heading-2;
+        grid-area: subtitle-about;
+
+    }
+
+    &__picture {
+        grid-area: picture-about;
+
+    }
+
+    &__photo {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 0.625rem;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    &__texts {
+        grid-area: text-about;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 6rem;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+
+    &__resume {
+        font-family: 'Source Sans 3', sans-serif;
+        font-size: $font-size-text-1;
+        font-weight: $font-weight-texts;
+        line-height: $line-height-texts;
+        letter-spacing: $letter-spacing-texts;
+        text-decoration: none;
+        text-align: center;
+        color: $color-black;
+        border-radius: 0.3125rem;
+        border: 1px solid $color-black;
+        padding: 1.25rem 2.5rem;
+        margin: 0 auto;
+        grid-area: resume;
+        display: inline-block;
+        transition: all 0.5s ease-in-out 0.2s;
+
+        &:hover {
+            background-color: $color-black;
+            color: $color-white;
+        }
+    }
+}
